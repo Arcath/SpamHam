@@ -1,0 +1,3 @@
+= SpamHam
+
+SpamHam provides a simple method for and string, .spam? this simply returns true or flase is SpamHam belives the message to be spam
