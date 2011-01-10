@@ -12,6 +12,10 @@ describe SpamHam, "#spam?" do
 	it "Should return true for \"ixxdzakarvtstdldkpxt, [url=http://www.amosboergoats.com/]Buy Cialis[/url], hgOvsFa.\"" do
 		ham = SpamHam.new.spam?("ixxdzakarvtstdldkpxt, [url=http://www.amosboergoats.com/]Buy Cialis[/url], hgOvsFa.").should == true
 	end
+	
+	it "Should return true for a sample comment" do
+		ham = SpamHam.new.spam?("Superman/Batman Apocalypse review film where to download Superman/Batman Apocalypse <a href=http://connections.blackboard.com/people/3bb5b7ebfe>Superman/Batman Apocalypse wiki </a> download dvd Superman/Batman Apocalypse download Superman/Batman Apocalypse divx http://connections.blackboard.com/people/3bb5b7ebfe download The Confidant film The Confidant movie actors <a href=http://connections.blackboard.com/people/6289e3efc2>the The Confidant film </a> watch The Confidant online The Confidant hdtv http://connections.blackboard.com/people/6289e3efc2").should == true
+	end
 end
 
 describe SpamHam, "#weight" do

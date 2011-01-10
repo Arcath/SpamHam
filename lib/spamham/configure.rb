@@ -20,6 +20,6 @@ class SpamHam
 		@config[:link_weight] ||= 10
 		@config[:link_multiple] ||= 1.1
 		@config[:multiple_link_style_weight] ||= 20
-		@config[:link_styles] ||= [/<a href="(.*?)">(.*?)<\/a>/,/\[url=(.*?)\](.*?)\[\/url\]/]
+		@config[:link_styles] ||= [/<a href="(.*?)">(.*?)<\/a>/,/\[url=(.*?)\](.*?)\[\/url\]/,/<a href=(.*?)>(.*?)<\/a>/]
 	end
 end

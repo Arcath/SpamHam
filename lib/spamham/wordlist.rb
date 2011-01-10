@@ -12,7 +12,9 @@ class SpamHam
 			"valium",
 			"ambien",
 			"dosage",
-			"propecia"
+			"propecia",
+			"download",
+			"sex"
 		] + (@config[:additional_words] || [])
 	end
 end
