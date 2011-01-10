@@ -1,2 +1,5 @@
 #!/usr/bin/env ruby
-puts "Fetching new wordlist"
+puts "Fetching new wordlist from github"
+lib_path = File.expand_path("../lib/spamham/",File.dirname(__FILE__))
+system("wget --no-check-certificate -O #{lib_path}/wordlist.yml https://github.com/Arcath/SpamHam/raw/master/lib/spamham/wordlist.yml")
+puts "Done"
